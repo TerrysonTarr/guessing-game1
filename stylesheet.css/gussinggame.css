@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-color: blue;
+}
+.container{
+    width: min(90%, 31.25em);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: aliceblue;
+    padding: 4em 2em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 2em;
+    color: purple;
+}
+.input-wrapper {
+    width: 40%;
+    display: flexbox;
+    grid-template-columns: 2fr 3fr;
+    gap: 1em;
+    margin: 3em auto 1.5em auto;
+}
+input[type="number"]{
+    width: 100%;
+    padding: 2em;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 0.3em;
+    outline: none;
+    appearance: text-field;
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+input[type="number"]:focus{
+    border-color: rgb(138, 14, 163);
+}
+button {
+    font-size: 2em;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    font-weight: 500;
+    cursor: pointer;
+}
+#restart {
+    margin: 0 auto 0 auto;
+    padding: 0.8em 1em;
+    display: none;
+}
+.result{
+    margin-top: 1em;
+}
+p {
+    font-size: 1em;
+    font-weight: 400;
+    color: black;
+    word-break: break-all;
+}
+.error, 
+.success{
+    padding: 0.5em 0;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    animation: pop 0.4s forwards;
+    transform: scale(0);
+}
+.error{
+    background-color: #ffcbcb;
+    color: red;
+}
+.success{
+    background-color: #b9ffd5;
+    color: green;
+}
+@keyframes pop{
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
