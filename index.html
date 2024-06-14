@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap"
+rel="stylesheet"/>
+<link rel="stylesheet" href="stylesheet.css/gussinggame.css"/>
+</head>
+<body>
+    <div class="container">
+        <div id="game">
+            <h3>I am Thinking of a number Between 1-100.
+                Can you guess it?
+            </h3>
+        <div class="input-wrapper">
+            <input type="number" placeholder="00" id="guess"/>
+            <button id="check-btn">Guess</button>
+        </div>
+        <p id="no-of-guesses">No. Of Guesses: 0</p>
+        <p id="guessed-nums">Guessed Numbers are: None</p>
+        </div>
+        <button id="restart">Restart</button>
+        <div class="result">
+            <div id="hint"></div>
+        </div>
+    </div>
+    <script src="script.js/gussing.js"></script>
+</body>
+</html>
